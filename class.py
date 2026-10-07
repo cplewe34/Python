@@ -1,3 +1,6 @@
+from pdb import main
+
+
 numbers = [14,2,3,45,5]
 
 
@@ -12,9 +15,12 @@ def is_odd(numero):
     return odd
 
 
-#main function
-for num in numbers:
-    if is_odd(num):
-        print(f"{num} is odd")
-    else:
-        print(f"{num} is even")
+def function():
+    for num in numbers:
+        if is_odd(num):
+            print(f"{num} is odd")
+        else:
+            print(f"{num} is even")
+
+
+function()
