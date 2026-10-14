@@ -1,20 +1,14 @@
-numbers = [1,2,3,4,5]
-
-def is_odd(numero):
-    odd = True
- 
-    if numero % 2 == 0:
-        odd = False
-    if numero % 2 != 0:
-        odd = True
-
-    return(odd)
+import random
+sentence = ["Yes", "No"]
 
 
-for num in numbers:
-    if is_odd (num):
-        print(f"{num} is odd")
+def yes_no():
+    computer = random.choice(sentence)
+    if computer == "Yes":
+            print("You selected Yes.")
     else:
-        print(f"{num} is even")
+        print("You selected No")
 
-print(is_odd(num))
+
+
+print(yes_no)
